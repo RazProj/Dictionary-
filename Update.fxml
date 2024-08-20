@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10" alignment="CENTER" xmlns:fx="http://javafx.com/fxml" fx:controller="UpdateController">
+    <Label text="Update item"/>
+    <TextField fx:id="keyField" promptText="Enter new key"/>
+    <TextField fx:id="valueField" promptText="Enter new value"/>
+    <Button text="Update" onAction="#handleUpdate"/>
+</VBox>

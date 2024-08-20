@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="MainController">
+    <top>
+        <HBox spacing="10" alignment="CENTER">
+            <Button text="add" onAction="#handleAdd"/>
+            <Button text="remove" onAction="#handleRemove"/>
+            <Button text="update" onAction="#handleUpdate"/>
+            <TextField fx:id="searchField" promptText="Enter search query"/>
+            <Button text="search" onAction="#handleSearch"/>
+        </HBox>
+    </top>
+    <center>
+        <ListView fx:id="listView"/>
+    </center>
+</BorderPane>
